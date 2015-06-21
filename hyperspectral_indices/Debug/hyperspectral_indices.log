@@ -1,0 +1,47 @@
+﻿Build started 6/1/2015 10:51:00 AM.
+     1>Project "c:\Users\Akash\Documents\Visual Studio 2010\Projects\hyperspectral_indices\hyperspectral_indices\hyperspectral_indices.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\hyperspectral_indices.unsuccessfulbuild".
+       AddCudaCompileDeps:
+       Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+       Skipping target "CudaBuild" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\Users\Akash\Documents\Visual Studio 2010\Projects\hyperspectral_indices\Debug\hyperspectral_indices.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\OSGeo4W64\lib /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opencv_calib3d2411d.lib opencv_contrib2411d.lib opencv_core2411d.lib opencv_features2d2411d.lib opencv_flann2411d.lib opencv_gpu2411d.lib opencv_highgui2411d.lib opencv_imgproc2411d.lib opencv_legacy2411d.lib opencv_ml2411d.lib opencv_nonfree2411d.lib opencv_objdetect2411d.lib opencv_ocl2411d.lib opencv_photo2411d.lib opencv_stitching2411d.lib opencv_superres2411d.lib opencv_ts2411d.lib opencv_video2411d.lib opencv_videostab2411d.lib expat.lib freexl_i.lib gdal_i.lib geos_c.lib geotiff.lib geotiff_i.lib hdf.lib hdf5.lib hdf5_hl.lib iconv.lib jpeg_i.lib jpeg12_i.lib libcurl.lib libpng16.lib libpq.lib libtiff_i.lib libxml2.lib mfhdf.lib netcdf.lib openjp2.lib proj.lib proj_i.lib spatialite.lib spatialite_i.lib sqlite3_i.lib szip.lib xdr.lib zdll.lib zlib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\hyperspectral_indices.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\Users\Akash\Documents\Visual Studio 2010\Projects\hyperspectral_indices\Debug\hyperspectral_indices.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\Users\Akash\Documents\Visual Studio 2010\Projects\hyperspectral_indices\Debug\hyperspectral_indices.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         Debug\hyperspectral_indices.exe.embed.manifest.res
+         Debug\serial_implementation.obj
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetGeoTransform@8 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetProjectionRef@4 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterXSize@4 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterYSize@4 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterCount@4 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetDriverShortName@4 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetDriverLongName@4 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetDatasetDriver@4 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALOpen@8 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALAllRegister@0 referenced in function "void __cdecl my_prog(char *)" (?my_prog@@YAXPAD@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALComputeRasterMinMax@12 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterMaximum@8 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterMinimum@8 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetDataTypeName@4 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterDataType@4 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetColorInterpretationName referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterColorInterpretation@4 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetBlockSize@12 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALRasterIO@48 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _CPLMalloc referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterBandYSize@4 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterBandXSize@4 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>serial_implementation.obj : error LNK2019: unresolved external symbol _GDALGetRasterBand@8 referenced in function "float * * __cdecl dynamicArray(int,int,int)" (?dynamicArray@@YAPAPAMHHH@Z)
+     1>c:\Users\Akash\Documents\Visual Studio 2010\Projects\hyperspectral_indices\Debug\hyperspectral_indices.exe : fatal error LNK1120: 23 unresolved externals
+     1>Done Building Project "c:\Users\Akash\Documents\Visual Studio 2010\Projects\hyperspectral_indices\hyperspectral_indices\hyperspectral_indices.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.73
